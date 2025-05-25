@@ -1,0 +1,11 @@
+numpy
+pandas
+spacy
+streamlit
+langchain
+langchain_core
+langchain_community
+openai
+huggingface_hub
+sentence-transformers
+pydantic

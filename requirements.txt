@@ -1,11 +1,13 @@
 numpy
 pandas
-spacy
-streamlit
-langchain
-langchain_core
-langchain_community
-openai
-huggingface_hub
-sentence-transformers
-pydantic
+dotenv
+langchain_openai
+# spacy
+# streamlit
+# langchain
+# langchain_core
+# langchain_community
+# openai
+# huggingface_hub
+# sentence-transformers
+# pydantic

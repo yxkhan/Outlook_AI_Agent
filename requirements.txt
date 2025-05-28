@@ -2,11 +2,14 @@ numpy
 pandas
 dotenv
 langchain_openai
+langchain
+langchain_core
+langchain_community
+langgraph
+langchain_groq
+langgraph.graph.memory
 # spacy
 # streamlit
-# langchain
-# langchain_core
-# langchain_community
 # openai
 # huggingface_hub
 # sentence-transformers

@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: outlook_ai_agent
+Version: 0.0.1
+Author: Yaseen
+Author-email: yaseen.khan@infosys.com
+Requires-Dist: langchain_openai
+Requires-Dist: langchain
+Requires-Dist: langgraph
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

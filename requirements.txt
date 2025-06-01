@@ -7,7 +7,12 @@ langchain_core
 langchain_community
 langgraph
 langchain_groq
-langgraph.graph.memory
+fastapi
+uvicorn
+jinja2s
+-e .
+
+
 # spacy
 # streamlit
 # openai

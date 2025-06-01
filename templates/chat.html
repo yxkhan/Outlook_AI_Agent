@@ -1,0 +1,47 @@
+<head>
+    <title>Outlook AI Agent</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Outlook AI Agent</h1>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Ask something..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById("chat-box");
+        const userInput = document.getElementById("user-input");
+
+        function appendMessage(sender, text) {
+            const div = document.createElement("div");
+            div.className = "message " + sender;
+            div.innerText = (sender === 'ai' ? 'AI: ' : 'You: ') + text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const message = userInput.value;
+            if (!message) return;
+
+            appendMessage("user", message);
+            userInput.value = "";
+
+            const res = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message })
+            });
+            const data = await res.json();
+            appendMessage("ai", data.response);
+        }
+
+        userInput.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                sendMessage();
+            }
+        });
+    </script>
+</body>

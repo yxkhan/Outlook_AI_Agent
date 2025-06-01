@@ -96,7 +96,7 @@ uvicorn main:app --reload
 
 ## 💡 Screenshots
 
-![alt text](C:\Users\Yaseen Khan\Documents\Data Sceince\Hackathon\Infy_Hackathon\data\sample_chatbot.png)
+![Chat Preview](data/sample_chatbot.png)
 
 ---
 
